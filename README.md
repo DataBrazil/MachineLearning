@@ -29,12 +29,11 @@ Foram realizados 26 experimentos por meio de cadernos no Google Colab (ver tabel
 
 Resultados:
 
-- NLP melhorou desempenho obtido no Projeto R (RF).
-- A acurácia foi maior (89,7% -> 91% - SGD, SVM e RF) e foram captados mais casos de saúde (antes foram 296 -> 326) - f1 score 0,82 nos 3 modelos.
-- Stemmer em geral melhorou o desempenho dos modelos.
-- Classificação de grupos temáticos obteve desempenho inferior ao do conjunto da saúde (alta acurácia, mas baixo recall), mas a dimensão saúde era captada.
+- NLP melhorou desempenho obtido no Projeto R (RF);
+- A acurácia foi maior (89,7% -> 91% - SGD, SVM e RF) e foram captados mais casos de saúde (antes foram 296 -> 326) - f1 score 0,82 nos 3 modelos;
+- Stemmer em geral melhorou o desempenho dos modelos;
+- Classificação de grupos temáticos obteve desempenho inferior ao do conjunto da saúde (alta acurácia, mas baixo recall), mas a dimensão saúde era captada;
 - Detectados erros a serem corrigidos.
-
 
 Fonte de dados - O inteiro teor do texto das proposições legislativas pode ser extraído de arquivos pdf, disponibilizados na Internet no site de dados abertos da Câmara dos Deputados. Ref: https://dadosabertos.camara.leg.br/swagger/api.html#staticfile. A listagem das proposições e de seus códigos de classificação, identificados por humanos estão disponíveis em planilhas eletrônicas neste site.
 
@@ -43,7 +42,8 @@ Estão disponibilizados neste site:
 - Estudo sobre agenda da saúde em tramitação na Câmara dos Deputados, para exemplificar aplicação desse tipo de informação;
 - Manual com a descrição das categorias de saúde; 
 - Caderno do Google Colab com aplicação de modelo Random Forest;
-- Banco de dados (csv) contendo características e a classificação dos PL. O banco com os textos dos PL está em https://www.kaggle.com/fabiobcgomes/brazilian-bills-of-law-2011-2014 (devido ao limite de tamanho do arquivo no GitHub).
+- Banco de dados (csv) contendo características e a classificação dos PL. O banco com os textos dos PL está em https://www.kaggle.com/fabiobcgomes/brazilian-bills-of-law-2011-2014 (devido ao limite de tamanho do arquivo no GitHub);
+- Tabela com síntese dos experimentos.
 
 
 
