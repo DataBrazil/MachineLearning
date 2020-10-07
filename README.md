@@ -4,7 +4,7 @@ Desafio do negócio - Anualmente são apresentadas na Câmara dos Deputados milh
 Solução construída - Desenvolvo esse projeto de ML há mais de um ano (classificação supervisionada de textos de projetos de lei – PL - relacionados à saúde).
 Houve muitos problemas na conversão de pdf em texto, pois a Câmara usou vários tipos de pdf ao longo do tempo. Em agosto de 2019, foram elaborados alguns modelos por meio do R (base com 7575 PL). O Random Forest foi o modelo mais promissor. Essa experiência permitiu a detecção de erros de classificação no conjunto de treinamento e algumas intuições sobre o banco de dados e até sobre problemas na própria tipologia usada para a classificação. Esse curso permitiu o aprendizado do Python e a retomada do projeto. 
 
-O projeto atual, desenvolvido no Curso de Machine Learning em Projetos (turma TCU - 2020 - Prof. Erick Muzart), permitiu a retomada do projeto e trata-se de classificação supervisionada de textos de PL de 2011 a 2014 relacionados à saúde e seus grupos temáticos. 
+O projeto atual, desenvolvido no Curso de Machine Learning em Projetos (turma TCU - 2020 - Prof. Erick Muzart) trata-se de classificação supervisionada de textos de PL de 2011 a 2014 relacionados à saúde e seus grupos temáticos. 
 
 As estapas desse projeto incluíram:
 - Etapa 1: classificar 8.327 PL de 2011 a 2014 (codificadores humanos) relacionados à saúde: “sim” (2.328 projetos), “não” (5.999 projetos).
