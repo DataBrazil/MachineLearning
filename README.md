@@ -1,49 +1,38 @@
-# Machine Learning - Projeto para Curso do TCU (10/2020) - por Fábio Gomes
-Desafio do negócio - Anualmente são apresentadas na Câmara dos Deputados milhares de proposições legislativas. A adoção de classificação temática realizada de modo automático facilitaria atividades de monitoramento da tramitação de projetos de lei (PL) e outros tipos, como propostas de fiscalização e controle (PFC), segundo grupos temáticos de saúde, ampliando a transparência para a sociedade e agilizando atividades de elaboração legislativa e de fiscalização. Grupo de pesquisa da Câmara dos Deputados sobre Legislativo e Saúde, de que participo, desenvolveu tipologia hierarquizada para classificação de proposições legislativas relacionadas à saúde, contendo quatro grupos temáticos (também possui subcategorias) e pretende-se utilizar essa base para produzir modelo capaz de classificar novas proposições automaticamente.
+# Machine Learning - Project for TCU Course (10/2020) - by Fábio Gomes
+Business challenge - Thousands of legislative proposals are presented annually to the Chamber of Deputies. The adoption of thematic classification carried out automatically would facilitate activities to monitor the processing of bills (PL) and other types, such as proposals for inspection and control (PFC), according to thematic health groups, increasing transparency for society and streamlining legislative drafting and enforcement activities. Research group of the Chamber of Deputies on Legislative and Health, of which I participate, developed a hierarchical typology for the classification of legislative proposals related to health, containing four thematic groups (also has subcategories) and it is intended to use this base to produce a model capable of classifying new propositions automatically.
 
-Solução construída - Desenvolvo esse projeto de ML há mais de um ano (classificação supervisionada de textos de projetos de lei – PL - relacionados à saúde).
-Houve muitos problemas na conversão de pdf em texto, pois a Câmara usou vários tipos de pdf ao longo do tempo. Em agosto de 2019, foram elaborados alguns modelos por meio do R (base com 7575 PL). O Random Forest foi o modelo mais promissor. Essa experiência permitiu a detecção de erros de classificação no conjunto de treinamento e algumas intuições sobre o banco de dados e até sobre problemas na própria tipologia usada para a classificação. Esse curso permitiu o aprendizado do Python e a retomada do projeto. 
+Built solution - I developed this ML project for over a year (supervised classification of texts of bills - PL - related to health). There were many problems in converting pdf to text, as the Chamber used several types of pdf over time. In August 2019, some models were developed using the R (base with 7575 PL). Random Forest was the most promising model. This experience allowed the detection of classification errors in the training set and some intuitions about the database and even about problems in the typology used for the classification. This course allowed the learning of Python and the resumption of the project.
 
-O projeto atual, desenvolvido no Curso de Machine Learning em Projetos (turma TCU - 2020 - Prof. Erick Muzart) trata-se de classificação supervisionada de textos de PL de 2011 a 2014 relacionados à saúde e seus grupos temáticos. 
+The current project, developed in the Machine Learning Course in Projects (TCU class - 2020 - Prof. Erick Muzart) is a supervised classification of PL texts from 2011 to 2014 related to health and its thematic groups.
 
-As etapas desse projeto incluíram:
-- Etapa 1 (em 2019): classificar 8.327 PL de 2011 a 2014 (codificadores humanos) relacionados à saúde: “sim” (2.328 projetos), “não” (5.999 projetos).
-- Etapa 2 (em 2019): converter o conteúdo dos arquivos em “pdf” para “txt” (7.575).
-- Etapa 3 (em 2019): construir o banco de dados (id dos PL, textos dos PL e códigos de saúde).
-- Etapa 4: aplicar modelos de aprendizado de máquina supervisionado (a partir de códigos Python do instrutor Fernando Melo).
-- Os modelos dividem o conjunto de dados para treinamento (80%) e teste (20%) e geram previsões para o último.
-- Etapa 5: calcular acurácia, recall, precisão e f1 score dos modelos.
+The steps of this project included:
 
-Distribuição das variáveis:
+Stage 1 (in 2019): classify 8,327 PL from 2011 to 2014 (human coders) related to health: “yes” (2,328 projects), “no” (5,999 projects).
+Step 2 (in 2019): convert the content of the files in "pdf" to "txt" (7,575).
+Stage 3 (in 2019): build the database (PL ids, PL texts and health codes).
+Step 4: apply supervised machine learning models (using Python codes from instructor Fernando Melo).
+The models divide the data set for training (80%) and testing (20%) and generate predictions for the latter.
+Step 5: calculate model accuracy, recall, precision and f1 score.
+Distribution of variables:
 
-- Variável independente: média por PL -> 844 palavras (std  1.963), corpus dos PL -> 33.700 tokens;
-- Variável dependente - dados desbalanceados (maioria não-saúde: 72%);
-- Frequência relativa dos grupos temáticos de saúde:
-  Assistência- 3,8%;
-  Gestão e recursos- 4,0%;
-  Prevenção- 15%;
-  Direitos- 6,7%;
-  Outros - 0.
+Independent variable: average per PL -> 844 words (std 1,963), corpus of PL -> 33,700 tokens;
+Dependent variable - unbalanced data (most non-health: 72%);
+Relative frequency of thematic health groups: Assistance - 3.8%; Management and resources - 4.0%; Prevention- 15%; Rights- 6.7%; Others - 0.
+26 experiments were carried out using notebooks on Google Colab (see summary table of results).
 
-Foram realizados 26 experimentos por meio de cadernos no Google Colab (ver tabela síntese de resultados).
+Results:
 
-Resultados:
+NLP improved performance obtained in Project R (RF);
+The accuracy was higher (89.7% -> 91% - SGD, SVM and RF) and more health cases were captured (before there were 296 -> 326) - f1 score 0.82 in the 3 models;
+Stemmer in general improved the performance of the models;
+Classification of thematic groups had a lower performance than the health group (high accuracy, but low recall), but the health dimension was captured;
+Errors detected to be corrected.
+Data source - The entire text of the legislative proposals can be extracted from pdf files, made available on the Internet on the Chamber of Deputies' open data website. Ref: https://dadosabertos.camara.leg.br/swagger/api.html#staticfile. The list of propositions and their classification codes, identified by humans, are available in spreadsheets on this website.
 
-- NLP melhorou desempenho obtido no Projeto R (RF);
-- A acurácia foi maior (89,7% -> 91% - SGD, SVM e RF) e foram captados mais casos de saúde (antes foram 296 -> 326) - f1 score 0,82 nos 3 modelos;
-- Stemmer em geral melhorou o desempenho dos modelos;
-- Classificação de grupos temáticos obteve desempenho inferior ao do conjunto da saúde (alta acurácia, mas baixo recall), mas a dimensão saúde era captada;
-- Detectados erros a serem corrigidos.
+The following are available on this website:
 
-Fonte de dados - O inteiro teor do texto das proposições legislativas pode ser extraído de arquivos pdf, disponibilizados na Internet no site de dados abertos da Câmara dos Deputados. Ref: https://dadosabertos.camara.leg.br/swagger/api.html#staticfile. A listagem das proposições e de seus códigos de classificação, identificados por humanos estão disponíveis em planilhas eletrônicas neste site.
-
-Estão disponibilizados neste site: 
-
-- Estudo sobre agenda da saúde em tramitação na Câmara dos Deputados, para exemplificar aplicação desse tipo de informação;
-- Manual com a descrição das categorias de saúde; 
-- Caderno do Google Colab com aplicação de modelo Random Forest;
-- Banco de dados (csv) contendo características e a classificação dos PL. O banco com os textos dos PL está em https://www.kaggle.com/fabiobcgomes/brazilian-bills-of-law-2011-2014 (devido ao limite de tamanho do arquivo no GitHub);
-- Tabela com síntese dos experimentos.
-
-
-
+Study on the health agenda in progress at the Chamber of Deputies, to exemplify the application of this type of information;
+Manual with description of health categories;
+Google Colab notebook with Random Forest model application;
+Database (csv) containing characteristics and classification of PL. The bank with the PL texts is at https://www.kaggle.com/fabiobcgomes/brazilian-bills-of-law-2011-2014 (due to the file size limit on GitHub);
+Table with summary of experiments.
