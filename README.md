@@ -7,32 +7,35 @@ The current project, developed in the Machine Learning Course in Projects (TCU c
 
 The steps of this project included:
 
-Stage 1 (in 2019): classify 8,327 PL from 2011 to 2014 (human coders) related to health: “yes” (2,328 projects), “no” (5,999 projects).
-Step 2 (in 2019): convert the content of the files in "pdf" to "txt" (7,575).
-Stage 3 (in 2019): build the database (PL ids, PL texts and health codes).
-Step 4: apply supervised machine learning models (using Python codes from instructor Fernando Melo).
+- Stage 1 (in 2019): classify 8,327 PL from 2011 to 2014 (human coders) related to health: “yes” (2,328 projects), “no” (5,999 projects).
+- Step 2 (in 2019): convert the content of the files in "pdf" to "txt" (7,575).
+- Stage 3 (in 2019): build the database (PL ids, PL texts and health codes).
+- Step 4: apply supervised machine learning models (using Python codes from instructor Fernando Melo).
 The models divide the data set for training (80%) and testing (20%) and generate predictions for the latter.
-Step 5: calculate model accuracy, recall, precision and f1 score.
+- Step 5: calculate model accuracy, recall, precision and f1 score.
+
 Distribution of variables:
 
-Independent variable: average per PL -> 844 words (std 1,963), corpus of PL -> 33,700 tokens;
-Dependent variable - unbalanced data (most non-health: 72%);
+- Independent variable: average per PL -> 844 words (std 1,963), corpus of PL -> 33,700 tokens;
+- Dependent variable - unbalanced data (most non-health: 72%);
 Relative frequency of thematic health groups: Assistance - 3.8%; Management and resources - 4.0%; Prevention- 15%; Rights- 6.7%; Others - 0.
 26 experiments were carried out using notebooks on Google Colab (see summary table of results).
 
 Results:
 
-NLP improved performance obtained in Project R (RF);
-The accuracy was higher (89.7% -> 91% - SGD, SVM and RF) and more health cases were captured (before there were 296 -> 326) - f1 score 0.82 in the 3 models;
-Stemmer in general improved the performance of the models;
-Classification of thematic groups had a lower performance than the health group (high accuracy, but low recall), but the health dimension was captured;
-Errors detected to be corrected.
+- NLP improved performance obtained in Project R (RF);
+- The accuracy was higher (89.7% -> 91% - SGD, SVM and RF) and more health cases were captured (before there were 296 -> 326) - f1 score 0.82 in the 3 models;
+- Stemmer in general improved the performance of the models;
+- Classification of thematic groups had a lower performance than the health group (high accuracy, but low recall), but the health dimension was captured;
+- Errors detected to be corrected.
+
 Data source - The entire text of the legislative proposals can be extracted from pdf files, made available on the Internet on the Chamber of Deputies' open data website. Ref: https://dadosabertos.camara.leg.br/swagger/api.html#staticfile. The list of propositions and their classification codes, identified by humans, are available in spreadsheets on this website.
 
 The following are available on this website:
 
-Study on the health agenda in progress at the Chamber of Deputies, to exemplify the application of this type of information;
-Manual with description of health categories;
-Google Colab notebook with Random Forest model application;
-Database (csv) containing characteristics and classification of PL. The bank with the PL texts is at https://www.kaggle.com/fabiobcgomes/brazilian-bills-of-law-2011-2014 (due to the file size limit on GitHub);
-Table with summary of experiments.
+- Study on the health agenda in progress at the Chamber of Deputies, to exemplify the application of this type of information;
+- Manual with description of health categories;
+- Google Colab notebook with Random Forest model application;
+- Database (csv) containing characteristics and classification of PL.
+- The database with the PL texts is at https://www.kaggle.com/fabiobcgomes/brazilian-bills-of-law-2011-2014 (due to the file size limit on GitHub);
+- Table with summary of experiments.
