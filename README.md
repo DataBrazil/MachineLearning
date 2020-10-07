@@ -1,15 +1,15 @@
-# Machine Learning - Projeto para Curso do TCU (09/2020) - por Fábio Gomes
+# Machine Learning - Projeto para Curso do TCU (10/2020) - por Fábio Gomes
 Desafio do negócio - Anualmente são apresentadas na Câmara dos Deputados milhares de proposições legislativas. A adoção de classificação temática realizada de modo automático facilitaria atividades de monitoramento da tramitação de projetos de lei (PL) e outros tipos, como propostas de fiscalização e controle (PFC), segundo grupos temáticos de saúde, ampliando a transparência para a sociedade e agilizando atividades de elaboração legislativa e de fiscalização. Grupo de pesquisa da Câmara dos Deputados sobre Legislativo e Saúde, de que participo, desenvolveu tipologia hierarquizada para classificação de proposições legislativas relacionadas à saúde, contendo quatro grupos temáticos (também possui subcategorias) e pretende-se utilizar essa base para produzir modelo capaz de classificar novas proposições automaticamente.
 
 Solução construída - Desenvolvo esse projeto de ML há mais de um ano (classificação supervisionada de textos de projetos de lei – PL - relacionados à saúde).Houve muitos problemas na conversão de pdf em texto, pois a Câmara usou vários tipos de pdf ao longo do tempo. Em agosto de 2019, foram elaborados alguns modelos por meio do R (base com 7575 PL). O Random Forest foi o modelo mais promissor. Essa experiência permitiu a detecção de erros de classificação no conjunto de treinamento e algumas intuições sobre o banco de dados e até sobre problemas na própria tipologia usada para a classificação. Esse curso permitiu o aprendizado do Python e a retomada do projeto. 
 
-O projeto atual, desenvolvido no Curso de Machine Learning em Projetos (turma TCU - 2020), permitiu a retomada do projeto e trata-se de classificação supervisionada de textos de PL de 2011 a 2014 relacionados à saúde e seus grupos temáticos. 
+O projeto atual, desenvolvido no Curso de Machine Learning em Projetos (turma TCU - 2020 - Prof. Erick Muzart), permitiu a retomada do projeto e trata-se de classificação supervisionada de textos de PL de 2011 a 2014 relacionados à saúde e seus grupos temáticos. 
 
 As estapas desse projeto incluíram:
 - Etapa 1: classificar 8.327 PL de 2011 a 2014 (codificadores humanos) relacionados à saúde: “sim” (2.328 projetos), “não” (5.999 projetos).
 - Etapa 2: converter o conteúdo dos arquivos em “pdf” para “txt” (7.575).
 - Etapa 3: construir o banco de dados (id dos PL, textos dos PL e códigos de saúde).
-- Etapa 4: aplicar modelos de aprendizado de máquina supervisionado (Python).
+- Etapa 4: aplicar modelos de aprendizado de máquina supervisionado (a partir de códigos Python do instrutor Fernando Melo).
 - Os modelos dividem o conjunto de dados para treinamento (80%) e teste (20%) e geram previsões para o último.
 - Etapa 5: calcular acurácia, recall, precisão e f1 score dos modelos.
 
