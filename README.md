@@ -14,7 +14,7 @@ As etapas desse projeto incluíram:
 - Os modelos dividem o conjunto de dados para treinamento (80%) e teste (20%) e geram previsões para o último.
 - Etapa 5: calcular acurácia, recall, precisão e f1 score dos modelos.
 
-Distrbuição das variáveis:
+Distribuição das variáveis:
 
 - Variável independente: média por PL -> 844 palavras (std  1.963), corpus dos PL -> 33.700 tokens;
 - Variável dependente - dados desbalanceados (maioria não-saúde: 72%);
