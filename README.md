@@ -43,7 +43,7 @@ Estão disponibilizados neste site:
 - Estudo sobre agenda da saúde em tramitção  na Câmara dos Deputados, para exemplificar aplicação desse tipo de informação;
 - Manual com a descrição das categoridas de saúde; 
 - Caderno do Google Colab com aplicação de modelo Random Forest;
-- Bancos de dados (csv) - um contento os textos dos PL e outro, as demais características e a classificação dos PL.
+- Banco de dados (csv) contendo características e a classificação dos PL. O banco com os textos dos PL está em https://www.kaggle.com/fabiobcgomes/brazilian-bills-of-law-2011-2014 (devido ao limite de tamanho do arquivo no GitHub).
 
 
 
