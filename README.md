@@ -7,9 +7,9 @@ Houve muitos problemas na conversão de pdf em texto, pois a Câmara usou vário
 O projeto atual, desenvolvido no Curso de Machine Learning em Projetos (turma TCU - 2020 - Prof. Erick Muzart) trata-se de classificação supervisionada de textos de PL de 2011 a 2014 relacionados à saúde e seus grupos temáticos. 
 
 As estapas desse projeto incluíram:
-- Etapa 1: classificar 8.327 PL de 2011 a 2014 (codificadores humanos) relacionados à saúde: “sim” (2.328 projetos), “não” (5.999 projetos).
-- Etapa 2: converter o conteúdo dos arquivos em “pdf” para “txt” (7.575).
-- Etapa 3: construir o banco de dados (id dos PL, textos dos PL e códigos de saúde).
+- Etapa 1 (em 2019): classificar 8.327 PL de 2011 a 2014 (codificadores humanos) relacionados à saúde: “sim” (2.328 projetos), “não” (5.999 projetos).
+- Etapa 2 (em 2019): converter o conteúdo dos arquivos em “pdf” para “txt” (7.575).
+- Etapa 3 (em 2019): construir o banco de dados (id dos PL, textos dos PL e códigos de saúde).
 - Etapa 4: aplicar modelos de aprendizado de máquina supervisionado (a partir de códigos Python do instrutor Fernando Melo).
 - Os modelos dividem o conjunto de dados para treinamento (80%) e teste (20%) e geram previsões para o último.
 - Etapa 5: calcular acurácia, recall, precisão e f1 score dos modelos.
