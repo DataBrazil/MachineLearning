@@ -45,4 +45,4 @@ Estão disponibilizados neste site:
 
 - Caderno do Google Colab com aplicação de modelo Random Forest. 
 
-- Estudo sobre agenda da saúde em tramitção  na câmara dos Deputados, para exemplificar aplicação desse tipo de informação.
+- Estudo sobre agenda da saúde em tramitção  na Câmara dos Deputados, para exemplificar aplicação desse tipo de informação.
