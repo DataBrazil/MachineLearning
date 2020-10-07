@@ -35,3 +35,11 @@ Resultados
 
 
 Fonte de dados - O inteiro teor do texto das proposições legislativas pode ser extraído de arquivos pdf, disponibilizados na Internet no site de dados abertos da Câmara dos Deputados. Ref: https://dadosabertos.camara.leg.br/swagger/api.html#staticfile. A listagem das proposições e de seus códigos de classificação, identificados por humanos estão disponíveis em planilhas eletrônicas neste site.
+
+Foram disponibilizados neste site: 
+
+- manual com a descrição das categoridas de saúde; 
+
+- bancos de dados (csv) - um contento os textos dos PL e outro, as demais características e a classificação dos PL;
+
+- Caderno do Google Colab com aplicação de modelo Random Forest. 
