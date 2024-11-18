@@ -1,4 +1,4 @@
-# Machine Learning - Project for TCU Course (10/2020) - by Fábio Gomes
+# Machine Learning Projects - by Fábio Gomes
 Business challenge - Thousands of legislative proposals are presented annually to the Chamber of Deputies. The adoption of thematic classification carried out automatically would facilitate activities to monitor the processing of bills (PL) and other types, such as proposals for inspection and control (PFC), according to thematic health groups, increasing transparency for society and streamlining legislative drafting and enforcement activities. Research group of the Chamber of Deputies on Legislative and Health, of which I participate, developed a hierarchical typology for the classification of legislative proposals related to health, containing four thematic groups (also has subcategories) and it is intended to use this base to produce a model capable of classifying new propositions automatically.
 
 Built solution - I developed this ML project for over a year (supervised classification of texts of bills - PL - related to health). There were many problems in converting pdf to text, as the Chamber used several types of pdf over time. In August 2019, some models were developed using the R (base with 7575 PL). Random Forest was the most promising model. This experience allowed the detection of classification errors in the training set and some intuitions about the database and even about problems in the typology used for the classification. This course allowed the learning of Python and the resumption of the project.
@@ -39,3 +39,4 @@ The following are available on this website:
 - Database (csv) containing characteristics and classification of PL.
 - The database with the PL texts is at https://www.kaggle.com/fabiobcgomes/brazilian-bills-of-law-2011-2014 (due to the file size limit on GitHub);
 - Table with summary of experiments.
+- Research report of experiments performed in 2024.
